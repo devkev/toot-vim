@@ -17,6 +17,8 @@ setlocal textwidth=0
 setlocal wrapmargin=0
 setlocal expandtab
 setlocal shiftwidth=2
+setlocal wrap linebreak
+setlocal showbreak=\ \ 
 
 " Mappings {{{1
 " Mark done {{{2
