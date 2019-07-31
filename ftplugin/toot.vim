@@ -23,6 +23,9 @@ vnoremap <script> <silent> <buffer> <localleader>x :call toot#mark_as_done()<CR>
 nnoremap <script> <silent> <buffer> <localleader>y :call toot#mark_as_done()<CR>
 vnoremap <script> <silent> <buffer> <localleader>y :call toot#mark_as_done()<CR>
 
+nnoremap <script> <silent> <buffer> o o- 
+nnoremap <script> <silent> <buffer> O O- 
+
 " Mark won't do {{{2
 nnoremap <script> <silent> <buffer> <localleader>n :call toot#mark_as_wontdo()<CR>
 vnoremap <script> <silent> <buffer> <localleader>n :call toot#mark_as_wontdo()<CR>
