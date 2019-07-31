@@ -61,4 +61,4 @@ endfunction
 " Restore context {{{1
 let &cpo = s:save_cpo
 " Modeline {{{1
-" vim: ts=8 sw=4 sts=4 et foldenable foldmethod=marker foldcolumn=1
+" vim: ts=8 sw=4 sts=4 et

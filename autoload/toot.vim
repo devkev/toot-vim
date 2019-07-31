@@ -46,4 +46,4 @@ function! toot#remove_completed()
 endfunction
 
 " Modeline {{{1
-" vim: ts=8 sw=4 sts=4 et foldenable foldmethod=marker foldcolumn=1
+" vim: ts=8 sw=4 sts=4 et
