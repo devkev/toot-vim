@@ -1,53 +1,53 @@
-" File:        todo.txt.vim
-" Description: Todo.txt syntax settings
-" Author:      Leandro Freitas <freitass@gmail.com>
+" File:        toot.vim
+" Description: Toot syntax settings
+" Author:      Kevin Pulo <kev@pulo.com.au>
 " License:     Vim license
-" Website:     http://github.com/freitass/todo.txt-vim
-" Version:     0.3
+" Website:     http://github.com/devkev/toot-vim
+" Version:     0.1
 
 if exists("b:current_syntax")
     finish
 endif
 
-syntax  match  TodoDone       '^[xX]\s.\+$'
-syntax  match  TodoPriorityA  '^([aA])\s.\+$'             contains=TodoDate,TodoProject,TodoContext
-syntax  match  TodoPriorityB  '^([bB])\s.\+$'             contains=TodoDate,TodoProject,TodoContext
-syntax  match  TodoPriorityC  '^([cC])\s.\+$'             contains=TodoDate,TodoProject,TodoContext
-syntax  match  TodoPriorityD  '^([dD])\s.\+$'             contains=TodoDate,TodoProject,TodoContext
-syntax  match  TodoPriorityE  '^([eE])\s.\+$'             contains=TodoDate,TodoProject,TodoContext
-syntax  match  TodoPriorityF  '^([fF])\s.\+$'             contains=TodoDate,TodoProject,TodoContext
-syntax  match  TodoPriorityG  '^([gG])\s.\+$'             contains=TodoDate,TodoProject,TodoContext
-syntax  match  TodoPriorityH  '^([hH])\s.\+$'             contains=TodoDate,TodoProject,TodoContext
-syntax  match  TodoPriorityI  '^([iI])\s.\+$'             contains=TodoDate,TodoProject,TodoContext
-syntax  match  TodoPriorityJ  '^([jJ])\s.\+$'             contains=TodoDate,TodoProject,TodoContext
-syntax  match  TodoPriorityK  '^([kK])\s.\+$'             contains=TodoDate,TodoProject,TodoContext
-syntax  match  TodoPriorityL  '^([lL])\s.\+$'             contains=TodoDate,TodoProject,TodoContext
-syntax  match  TodoPriorityM  '^([mM])\s.\+$'             contains=TodoDate,TodoProject,TodoContext
-syntax  match  TodoPriorityN  '^([nN])\s.\+$'             contains=TodoDate,TodoProject,TodoContext
-syntax  match  TodoPriorityO  '^([oO])\s.\+$'             contains=TodoDate,TodoProject,TodoContext
-syntax  match  TodoPriorityP  '^([pP])\s.\+$'             contains=TodoDate,TodoProject,TodoContext
-syntax  match  TodoPriorityQ  '^([qQ])\s.\+$'             contains=TodoDate,TodoProject,TodoContext
-syntax  match  TodoPriorityR  '^([rR])\s.\+$'             contains=TodoDate,TodoProject,TodoContext
-syntax  match  TodoPriorityS  '^([sS])\s.\+$'             contains=TodoDate,TodoProject,TodoContext
-syntax  match  TodoPriorityT  '^([tT])\s.\+$'             contains=TodoDate,TodoProject,TodoContext
-syntax  match  TodoPriorityU  '^([uU])\s.\+$'             contains=TodoDate,TodoProject,TodoContext
-syntax  match  TodoPriorityV  '^([vV])\s.\+$'             contains=TodoDate,TodoProject,TodoContext
-syntax  match  TodoPriorityW  '^([wW])\s.\+$'             contains=TodoDate,TodoProject,TodoContext
-syntax  match  TodoPriorityX  '^([xX])\s.\+$'             contains=TodoDate,TodoProject,TodoContext
-syntax  match  TodoPriorityY  '^([yY])\s.\+$'             contains=TodoDate,TodoProject,TodoContext
-syntax  match  TodoPriorityZ  '^([zZ])\s.\+$'             contains=TodoDate,TodoProject,TodoContext
+syntax  match  TootDone       '^[xX]\s.\+$'
+syntax  match  TootPriorityA  '^([aA])\s.\+$'             contains=TootDate,TootProject,TootContext
+syntax  match  TootPriorityB  '^([bB])\s.\+$'             contains=TootDate,TootProject,TootContext
+syntax  match  TootPriorityC  '^([cC])\s.\+$'             contains=TootDate,TootProject,TootContext
+syntax  match  TootPriorityD  '^([dD])\s.\+$'             contains=TootDate,TootProject,TootContext
+syntax  match  TootPriorityE  '^([eE])\s.\+$'             contains=TootDate,TootProject,TootContext
+syntax  match  TootPriorityF  '^([fF])\s.\+$'             contains=TootDate,TootProject,TootContext
+syntax  match  TootPriorityG  '^([gG])\s.\+$'             contains=TootDate,TootProject,TootContext
+syntax  match  TootPriorityH  '^([hH])\s.\+$'             contains=TootDate,TootProject,TootContext
+syntax  match  TootPriorityI  '^([iI])\s.\+$'             contains=TootDate,TootProject,TootContext
+syntax  match  TootPriorityJ  '^([jJ])\s.\+$'             contains=TootDate,TootProject,TootContext
+syntax  match  TootPriorityK  '^([kK])\s.\+$'             contains=TootDate,TootProject,TootContext
+syntax  match  TootPriorityL  '^([lL])\s.\+$'             contains=TootDate,TootProject,TootContext
+syntax  match  TootPriorityM  '^([mM])\s.\+$'             contains=TootDate,TootProject,TootContext
+syntax  match  TootPriorityN  '^([nN])\s.\+$'             contains=TootDate,TootProject,TootContext
+syntax  match  TootPriorityO  '^([oO])\s.\+$'             contains=TootDate,TootProject,TootContext
+syntax  match  TootPriorityP  '^([pP])\s.\+$'             contains=TootDate,TootProject,TootContext
+syntax  match  TootPriorityQ  '^([qQ])\s.\+$'             contains=TootDate,TootProject,TootContext
+syntax  match  TootPriorityR  '^([rR])\s.\+$'             contains=TootDate,TootProject,TootContext
+syntax  match  TootPriorityS  '^([sS])\s.\+$'             contains=TootDate,TootProject,TootContext
+syntax  match  TootPriorityT  '^([tT])\s.\+$'             contains=TootDate,TootProject,TootContext
+syntax  match  TootPriorityU  '^([uU])\s.\+$'             contains=TootDate,TootProject,TootContext
+syntax  match  TootPriorityV  '^([vV])\s.\+$'             contains=TootDate,TootProject,TootContext
+syntax  match  TootPriorityW  '^([wW])\s.\+$'             contains=TootDate,TootProject,TootContext
+syntax  match  TootPriorityX  '^([xX])\s.\+$'             contains=TootDate,TootProject,TootContext
+syntax  match  TootPriorityY  '^([yY])\s.\+$'             contains=TootDate,TootProject,TootContext
+syntax  match  TootPriorityZ  '^([zZ])\s.\+$'             contains=TootDate,TootProject,TootContext
 
-syntax  match  TodoDate       '\d\{2,4\}-\d\{2\}-\d\{2\}' contains=NONE
-syntax  match  TodoProject    '\(^\|\W\)+[^[:blank:]]\+'  contains=NONE
-syntax  match  TodoContext    '\(^\|\W\)@[^[:blank:]]\+'  contains=NONE
+syntax  match  TootDate       '\d\{2,4\}-\d\{2\}-\d\{2\}' contains=NONE
+syntax  match  TootProject    '\(^\|\W\)+[^[:blank:]]\+'  contains=NONE
+syntax  match  TootContext    '\(^\|\W\)@[^[:blank:]]\+'  contains=NONE
 
 " Other priority colours might be defined by the user
-highlight  default  link  TodoDone       Comment
-highlight  default  link  TodoPriorityA  Constant
-highlight  default  link  TodoPriorityB  Statement
-highlight  default  link  TodoPriorityC  Identifier
-highlight  default  link  TodoDate       PreProc
-highlight  default  link  TodoProject    Special
-highlight  default  link  TodoContext    Special
+highlight  default  link  TootDone       Comment
+highlight  default  link  TootPriorityA  Constant
+highlight  default  link  TootPriorityB  Statement
+highlight  default  link  TootPriorityC  Identifier
+highlight  default  link  TootDate       PreProc
+highlight  default  link  TootProject    Special
+highlight  default  link  TootContext    Special
 
-let b:current_syntax = "todo"
+let b:current_syntax = "toot"
