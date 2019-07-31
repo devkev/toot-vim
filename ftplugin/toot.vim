@@ -18,7 +18,7 @@ setlocal wrapmargin=0
 setlocal expandtab
 setlocal shiftwidth=2
 setlocal wrap linebreak
-setlocal showbreak=\ \ 
+setlocal breakindent
 
 " Mappings {{{1
 " Mark done {{{2
