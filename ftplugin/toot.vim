@@ -15,6 +15,8 @@ set cpo&vim
 " created or edited.
 setlocal textwidth=0
 setlocal wrapmargin=0
+setlocal expandtab
+setlocal shiftwidth=2
 
 " Mappings {{{1
 " Mark done {{{2
