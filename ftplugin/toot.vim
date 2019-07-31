@@ -41,10 +41,14 @@ nnoremap <script> <silent> <buffer> gJ J
 nnoremap <script> <silent> <buffer> gK K
 nnoremap <script> <silent> <buffer> g<C-J> <C-J>
 nnoremap <script> <silent> <buffer> g<C-K> <C-K>
+
 nnoremap <script> <silent> <buffer> J :m +1<CR>
 nnoremap <script> <silent> <buffer> K :m -2<CR>
 nnoremap <script> <silent> <buffer> <C-J> :m /^.*:$/<CR>
 nnoremap <script> <silent> <buffer> <C-K> :m -2<CR>:m ?^.*:$?<CR>
+
+vnoremap <script> <silent> <buffer> J :m '>+1<CR>gv
+vnoremap <script> <silent> <buffer> K :m '<-2<CR>gv
 
 " Folding {{{1
 " Options {{{2
