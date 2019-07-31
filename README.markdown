@@ -8,7 +8,6 @@ This plugin gives syntax highlighting to Toot format todo files. It also defines
 
 Mark as done:  
 `<localleader>x`   Mark current task as done  
-`<localleader>X`   Mark all tasks as done  
 `<localleader>D`   Move completed tasks to done.txt  
 
 This plugin detects any text file with the name todo or done with an optional prefix that ends in a period (e.g. second.todo, example.done).

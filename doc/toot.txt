@@ -19,7 +19,6 @@ CONTENTS                                                       *toot-contents*
 
 1.1 Mark as done:                                         *toot-commands-done*
 	`<localleader>x`   Mark current task as done
-	`<localleader>X`   Mark all tasks as done
 	`<localleader>D`   Move completed tasks to done.txt
 
 See :h <localleader> for more information about the commands' prefix.

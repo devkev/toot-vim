@@ -10,10 +10,6 @@ function! toot#mark_as_done()
     execute 'normal! I[x] '
 endfunction
 
-function! toot#mark_all_as_done()
-    :g!/^\[xXnN\] /:call toot#mark_as_done()
-endfunction
-
 function! s:append_to_file(file, lines)
     let l:lines = []
 

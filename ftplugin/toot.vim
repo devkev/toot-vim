@@ -25,9 +25,6 @@ vnoremap <script> <silent> <buffer> <localleader>s :sort<CR>
 nnoremap <script> <silent> <buffer> <localleader>x :call toot#mark_as_done()<CR>
 vnoremap <script> <silent> <buffer> <localleader>x :call toot#mark_as_done()<CR>
 
-" Mark all done {{{2
-nnoremap <script> <silent> <buffer> <localleader>X :call toot#mark_all_as_done()<CR>
-
 " Remove completed {{{2
 nnoremap <script> <silent> <buffer> <localleader>D :call toot#remove_completed()<CR>
 
