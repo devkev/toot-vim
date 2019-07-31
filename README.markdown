@@ -8,9 +8,11 @@ This plugin gives syntax highlighting to Toot format todo files. It also defines
 
 Mark as done:  
 `<localleader>x`   Mark current task as done  
-`<localleader>D`   Move completed tasks to done.txt  
+`<localleader>y`   Mark current task as done
+`<localleader>n`   Mark current task as won't do
+`<localleader>D`   Move completed tasks to `done` file
 
-This plugin detects any text file with the name todo or done with an optional prefix that ends in a period (e.g. second.todo, example.done).
+This plugin detects any text file with the name `todo` or `done` with an optional prefix that ends in a period (e.g. `second.todo`, `example.done`).
 
-If you want the help installed, run ":helptags ~/.vim/doc" inside vim after having copied the files.
-Then you will be able to get the commands help with: `:h toot`.
+If you want the help installed, run `:helptags ~/.vim/doc` inside vim after having copied the files.
+Then you will be able to get the commands help with `:h toot`.
