@@ -49,6 +49,8 @@ nnoremap <script> <silent> <buffer> <C-K> :m -2<CR>:m ?^.*:$?<CR>
 
 vnoremap <script> <silent> <buffer> J :m '>+1<CR>gv
 vnoremap <script> <silent> <buffer> K :m '<-2<CR>gv
+vnoremap <script> <silent> <buffer> <C-J> :m /^.*:$/<CR>gv
+vnoremap <script> <silent> <buffer> <C-K> :m '<-2<CR>gv:m ?^.*:$?<CR>gv
 
 " Folding {{{1
 " Options {{{2
