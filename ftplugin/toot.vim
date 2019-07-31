@@ -36,6 +36,16 @@ nnoremap <script> <silent> <buffer> <localleader>D :call toot#remove_completed()
 nnoremap <script> <silent> <buffer> o o- 
 nnoremap <script> <silent> <buffer> O O- 
 
+" Move line up/down {{{2
+nnoremap <script> <silent> <buffer> gJ J
+nnoremap <script> <silent> <buffer> gK K
+nnoremap <script> <silent> <buffer> g<C-J> <C-J>
+nnoremap <script> <silent> <buffer> g<C-K> <C-K>
+nnoremap <script> <silent> <buffer> J :m +1<CR>
+nnoremap <script> <silent> <buffer> K :m -2<CR>
+nnoremap <script> <silent> <buffer> <C-J> :m /^.*:$/<CR>
+nnoremap <script> <silent> <buffer> <C-K> :m -2<CR>:m ?^.*:$?<CR>
+
 " Folding {{{1
 " Options {{{2
 setlocal foldmethod=expr
