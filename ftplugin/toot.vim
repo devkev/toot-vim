@@ -20,31 +20,6 @@ setlocal wrapmargin=0
 " Sort tasks {{{2
 nnoremap <script> <silent> <buffer> <localleader>s :%sort<CR>
 vnoremap <script> <silent> <buffer> <localleader>s :sort<CR>
-nnoremap <script> <silent> <buffer> <localleader>s@ :%call toot#sort_by_context()<CR>
-vnoremap <script> <silent> <buffer> <localleader>s@ :call toot#sort_by_context()<CR>
-nnoremap <script> <silent> <buffer> <localleader>s+ :%call toot#sort_by_project()<CR>
-vnoremap <script> <silent> <buffer> <localleader>s+ :call toot#sort_by_project()<CR>
-nnoremap <script> <silent> <buffer> <localleader>sd :%call toot#sort_by_date()<CR>
-vnoremap <script> <silent> <buffer> <localleader>sd :call toot#sort_by_date()<CR>
-nnoremap <script> <silent> <buffer> <localleader>sdd :%call toot#sort_by_due_date()<CR>
-vnoremap <script> <silent> <buffer> <localleader>sdd :call toot#sort_by_due_date()<CR>
-
-" Change priority {{{2
-nnoremap <script> <silent> <buffer> <localleader>j :call toot#prioritize_increase()<CR>
-vnoremap <script> <silent> <buffer> <localleader>j :call toot#prioritize_increase()<CR>
-nnoremap <script> <silent> <buffer> <localleader>k :call toot#prioritize_decrease()<CR>
-vnoremap <script> <silent> <buffer> <localleader>k :call toot#prioritize_decrease()<CR>
-nnoremap <script> <silent> <buffer> <localleader>a :call toot#prioritize_add('A')<CR>
-vnoremap <script> <silent> <buffer> <localleader>a :call toot#prioritize_add('A')<CR>
-nnoremap <script> <silent> <buffer> <localleader>b :call toot#prioritize_add('B')<CR>
-vnoremap <script> <silent> <buffer> <localleader>b :call toot#prioritize_add('B')<CR>
-nnoremap <script> <silent> <buffer> <localleader>c :call toot#prioritize_add('C')<CR>
-vnoremap <script> <silent> <buffer> <localleader>c :call toot#prioritize_add('C')<CR>
-
-" Insert date {{{2
-inoremap <script> <silent> <buffer> date<Tab> <C-R>=strftime("%Y-%m-%d")<CR>
-nnoremap <script> <silent> <buffer> <localleader>d :call toot#replace_date()<CR>
-vnoremap <script> <silent> <buffer> <localleader>d :call toot#replace_date()<CR>
 
 " Mark done {{{2
 nnoremap <script> <silent> <buffer> <localleader>x :call toot#mark_as_done()<CR>
@@ -72,7 +47,7 @@ function! s:toot_fold_level(lnum)
     " function we will return 1 for the completed tasks (they will be at the
     " first folding level) while for the other lines 0 will be returned,
     " indicating that they do not fold.
-    return match(getline(a:lnum),'^[xX]\s.\+$') + 1
+    return match(getline(a:lnum),'^\[[xXnN]\]\s.\+$') + 1
 endfunction
 
 " s:toot_fold_text() {{{2

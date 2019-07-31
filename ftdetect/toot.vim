@@ -5,8 +5,8 @@
 " Website:     http://github.com/devkev/toot-vim
 " Version:     0.1
 
-autocmd BufNewFile,BufRead [Tt]odo.txt set filetype=toot
-autocmd BufNewFile,BufRead *.[Tt]odo.txt set filetype=toot
-autocmd BufNewFile,BufRead [Dd]one.txt set filetype=toot
-autocmd BufNewFile,BufRead *.[Dd]one.txt set filetype=toot
+autocmd BufNewFile,BufRead [Tt]odo set filetype=toot
+autocmd BufNewFile,BufRead *.[Tt]odo set filetype=toot
+autocmd BufNewFile,BufRead [Dd]one set filetype=toot
+autocmd BufNewFile,BufRead *.[Dd]one set filetype=toot
 

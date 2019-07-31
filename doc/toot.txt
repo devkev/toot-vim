@@ -1,4 +1,4 @@
-*toot.txt*	Vim plugin for Toot Todo files
+*toot*	Vim plugin for Toot Todo files
                      _____         _       _        _   ~
                     |_   _|__   __| | ___ | |___  _| |_ ~
                       | |/ _ \ / _` |/ _ \| __\ \/ / __|~
@@ -11,34 +11,13 @@
 CONTENTS                                                       *toot-contents*
 
 	1. Commands ..................................... |toot-commands|
-		1.1. Sorting tasks ............................ |toot-commands-sorting|
-		1.2. Edit priority ............................ |toot-commands-priority|
-		1.3. Date ..................................... |toot-commands-date|
-		1.4. Mark as done ............................. |toot-commands-done|
+		1.1. Mark as done ............................. |toot-commands-done|
 	2. Options ...................................... |toot-options|
 
 ==============================================================================
 1. Commands                                                    *toot-commands*
 
-1.1 Sorting tasks:                                     *toot-commands-sorting*
-	`<localleader>s`   Sort the file
-	`<localleader>s+`  Sort the file on +Projects
-	`<localleader>s@`  Sort the file on @Contexts
-	`<localleader>sd`  Sort the file on dates
-	`<localleader>sdd` Sort the file on due dates (i.e. due:2015-10-25)
-
-1.2 Edit priority:                                    *toot-commands-priority*
-	`<localleader>j`   Decrease the priority of the current line
-	`<localleader>k`   Increase the priority of the current line
-	`<localleader>a`   Add the priority (A) to the current line
-	`<localleader>b`   Add the priority (B) to the current line
-	`<localleader>c`   Add the priority (C) to the current line
-
-1.3 Date:                                                 *toot-commands-date*
-	`<localleader>d`   Set current task's creation date to the current date
-	`date<tab>`        (Insert mode) Insert the current date
-
-1.4 Mark as done:                                         *toot-commands-done*
+1.1 Mark as done:                                         *toot-commands-done*
 	`<localleader>x`   Mark current task as done
 	`<localleader>X`   Mark all tasks as done
 	`<localleader>D`   Move completed tasks to done.txt
@@ -48,13 +27,7 @@ See :h <localleader> for more information about the commands' prefix.
 ==============================================================================
 2. Options                                                      *toot-options*
 
-                                                      *'g:toot_existing_date'*
-Specify the behavior of date insertion functions when the task already has a
-date of creation: >
-  let g:toot_existing_date = 'n'
-<
-  r - replace existing date (default)
-  n - do nothing
+None.
 
 ===============================================================================
 vim:ft=help:et:ts=2:sw=2:sts=2:norl
