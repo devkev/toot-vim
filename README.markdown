@@ -1,3 +1,5 @@
+Based on https://github.com/freitass/todo.txt-vim, but much lighter (simpler format/controls).
+
 ### Quick install
 
     git clone git://github.com/devkev/toot-vim.git
