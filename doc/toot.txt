@@ -11,17 +11,30 @@
 CONTENTS                                                       *toot-contents*
 
 	1. Commands ..................................... |toot-commands|
-		1.1. Mark as done ............................. |toot-commands-done|
+		1.1. Task completion........................... |toot-commands-task-completion|
+		1.2. New lines ................................ |toot-commands-new-lines|
+		1.3. Moving lines ............................. |toot-commands-moving-lines|
 	2. Options ...................................... |toot-options|
 
 ==============================================================================
 1. Commands                                                    *toot-commands*
 
-1.1 Mark as done:                                         *toot-commands-done*
+1.1 Task completion                            *toot-commands-task-completion*
 	`<localleader>x`   Mark current task as done
 	`<localleader>y`   Mark current task as done
+	`<localleader>d`   Mark current task as done
 	`<localleader>n`   Mark current task as won't do
 	`<localleader>D`   Move completed tasks to `done` file
+
+1.2 New lines                                        *toot-commands-new-lines*
+	`o`              Start editing new line below with leading "- "
+	`O`              Start editing new line above with leading "- "
+
+1.3 Moving lines                                  *toot-commands-moving-lines*
+	`J`              Move line(s) down
+	`K`              Move line(s) up
+	`<C-J>`          Move line(s) to next heading
+	`<C-K>`          Move line(s) to previous heading
 
 See :h <localleader> for more information about the commands' prefix.
 
