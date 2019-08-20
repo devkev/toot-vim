@@ -10,7 +10,7 @@ if exists("b:current_syntax")
 endif
 
 syntax  match  TootDone       '^\[[xXnN]\]\s.\+$'
-syntax  match  TootHeading    '^.\+:$'
+syntax  match  TootHeading    '^[^[:space:]-].\+:$'
 
 " Other priority colours might be defined by the user
 highlight  default  link  TootDone       Comment
