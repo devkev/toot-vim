@@ -7,11 +7,11 @@
 
 " Functions {{{1
 function! toot#mark_as_done()
-    execute getline('.') =~ '^\[[xXnN]\] ' ? '' : 'normal! I[x] '
+    execute getline('.') =~ '^\[[xXnN]\] ' ? '' : 'normal! gI[x] '
 endfunction
 
 function! toot#mark_as_wontdo()
-    execute getline('.') =~ '^\[[xXnN]\] ' ? '' : 'normal! I[n] '
+    execute getline('.') =~ '^\[[xXnN]\] ' ? '' : 'normal! gI[n] '
 endfunction
 
 function! s:append_to_file(file, lines)
