@@ -23,8 +23,6 @@ setlocal breakindent
 
 " Mappings {{{1
 " Mark done {{{2
-nnoremap <script> <silent> <buffer> <localleader>x :call toot#mark_as_done()<CR>
-vnoremap <script> <silent> <buffer> <localleader>x :call toot#mark_as_done()<CR>
 nnoremap <script> <silent> <buffer> <localleader>y :call toot#mark_as_done()<CR>
 vnoremap <script> <silent> <buffer> <localleader>y :call toot#mark_as_done()<CR>
 nnoremap <script> <silent> <buffer> <localleader>d :call toot#mark_as_done()<CR>
@@ -33,6 +31,14 @@ vnoremap <script> <silent> <buffer> <localleader>d :call toot#mark_as_done()<CR>
 " Mark won't do {{{2
 nnoremap <script> <silent> <buffer> <localleader>n :call toot#mark_as_wontdo()<CR>
 vnoremap <script> <silent> <buffer> <localleader>n :call toot#mark_as_wontdo()<CR>
+nnoremap <script> <silent> <buffer> <localleader>x :call toot#mark_as_wontdo()<CR>
+vnoremap <script> <silent> <buffer> <localleader>x :call toot#mark_as_wontdo()<CR>
+
+" Mark todo {{{2
+nnoremap <script> <silent> <buffer> <localleader>t :call toot#mark_as_todo()<CR>
+vnoremap <script> <silent> <buffer> <localleader>t :call toot#mark_as_todo()<CR>
+nnoremap <script> <silent> <buffer> <localleader>- :call toot#mark_as_todo()<CR>
+vnoremap <script> <silent> <buffer> <localleader>- :call toot#mark_as_todo()<CR>
 
 " Remove completed {{{2
 nnoremap <script> <silent> <buffer> <localleader>D :call toot#remove_completed()<CR>
@@ -69,7 +75,7 @@ function! s:toot_fold_level(lnum)
     " function we will return 1 for the completed tasks (they will be at the
     " first folding level) while for the other lines 0 will be returned,
     " indicating that they do not fold.
-    return match(getline(a:lnum),'^\[[xXnN]\]\s.\+$') + 1
+    return match(getline(a:lnum),'^\s*\([✔✗]\|\[[xXnN]\]\)\s.\+$') + 1
 endfunction
 
 " s:toot_fold_text() {{{2

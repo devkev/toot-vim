@@ -7,11 +7,15 @@
 
 " Functions {{{1
 function! toot#mark_as_done()
-    execute getline('.') =~ '^\[[xXnN]\] ' ? '' : 'normal! gI[x] '
+    execute getline('.') =~ '^\s*\([✔✗-]\|\[[xXnN]\]\(\s-\)\?\)\s' ? 's/^\(\s*\)\([✔✗-]\|\[[xXnN]\]\(\s-\)\?\)\s/\1✔ /' : ''
 endfunction
 
 function! toot#mark_as_wontdo()
-    execute getline('.') =~ '^\[[xXnN]\] ' ? '' : 'normal! gI[n] '
+    execute getline('.') =~ '^\s*\([✔✗-]\|\[[xXnN]\]\(\s-\)\?\)\s' ? 's/^\(\s*\)\([✔✗-]\|\[[xXnN]\]\(\s-\)\?\)\s/\1✗ /' : ''
+endfunction
+
+function! toot#mark_as_todo()
+    execute getline('.') =~ '^\s*\([✔✗-]\|\[[xXnN]\]\(\s-\)\?\)\s' ? 's/^\(\s*\)\([✔✗-]\|\[[xXnN]\]\(\s-\)\?\)\s/\1- /' : ''
 endfunction
 
 function! s:append_to_file(file, lines)
@@ -41,7 +45,7 @@ function! toot#remove_completed()
     endif
 
     let l:completed = []
-    :g/^\[[xXnN]\] /call add(l:completed, getline(line(".")))|d
+    :g/^\s*\([✔✗]\|\[[xXnN]\]\)\s/call add(l:completed, getline(line(".")))|d
     call s:append_to_file(l:done_file, l:completed)
 endfunction
 

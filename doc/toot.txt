@@ -19,10 +19,12 @@ CONTENTS                                                       *toot-contents*
 1. Commands                                                    *toot-commands*
 
 1.1 Task completion                            *toot-commands-task-completion*
-	`<localleader>x`   Mark current task as done
-	`<localleader>y`   Mark current task as done
 	`<localleader>d`   Mark current task as done
+	`<localleader>y`   Mark current task as done
 	`<localleader>n`   Mark current task as won't do
+	`<localleader>x`   Mark current task as won't do
+	`<localleader>t`   Mark current task as todo
+	`<localleader>-`   Mark current task as todo
 	`<localleader>D`   Move completed tasks to `done` file
 
 1.2 Moving lines                                  *toot-commands-moving-lines*
