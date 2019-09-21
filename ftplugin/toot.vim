@@ -37,10 +37,6 @@ vnoremap <script> <silent> <buffer> <localleader>n :call toot#mark_as_wontdo()<C
 " Remove completed {{{2
 nnoremap <script> <silent> <buffer> <localleader>D :call toot#remove_completed()<CR>
 
-" New line {{{2
-nnoremap <script> <silent> <buffer> o o- 
-nnoremap <script> <silent> <buffer> O O- 
-
 " Move line up/down {{{2
 nnoremap <script> <silent> <buffer> gJ J
 nnoremap <script> <silent> <buffer> gK K
